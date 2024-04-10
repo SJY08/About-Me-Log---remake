@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "KCC-Hanbit";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "KCC-Hanbit", cursive;
+}
+
+#tooltip-text {
+  display: none;
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  width: 70px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 5px 0;
+  background: #941938;
+  color: rgb(255, 242, 168);
+}
+
+#tooltip-text:hover {
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  position: relative;
+  display: block;
+  margin: 20px;
+  padding: 10px;
+  border: rgb(245, 146, 156) solid 3px;
+  border-radius: 15px;
+  background-color: rgb(255, 248, 250);
+  box-shadow: 5px 5px 0 rgb(255, 185, 195);
+}
+.img > img {
+  border-radius: 15px;
+}
+
+.img #tooltip {
+  visibility: hidden;
+  background-color: rgb(255, 223, 162);
+  color: #6f103b;
+  text-align: center;
+  border-radius: 10px;
+
+  position: absolute;
+  z-index: 1;
+}
+.img:hover #tooltip {
+  visibility: visible;
+}
+.img #tooltip {
+  width: 120px;
+  top: 92%;
+  left: 50%;
+  margin-left: -60px;
+}
+.img #tooltip::after {
+  bottom: 5%;
+  left: 50%;
+  margin-left: -5px;
+}
+
+.text {
+  text-align: center;
+  color: rgb(129, 10, 47);
+
+  margin: 20px;
+  padding: 10px;
+  border: rgb(245, 146, 156) solid 3px;
+  border-radius: 15px;
+  background-color: rgb(255, 248, 250);
+  box-shadow: 5px 5px 0 rgb(255, 185, 195);
+}
+
+.a {
+  text-align: center;
+  color: rgb(129, 10, 47);
+
+  margin: 20px;
+  padding: 10px;
+  border: rgb(245, 146, 156) solid 3px;
+  border-radius: 15px;
+  background-color: rgb(255, 248, 250);
+  box-shadow: 5px 5px 0 rgb(255, 185, 195);
+}
+
+a:hover {
+  opacity: 70%;
+  transition: 200ms;
+}
+a:active {
+  opacity: 20%;
+}
+
+.box {
+  color: rgb(133, 27, 44);
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  border: rgb(255, 154, 164) solid 3px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0 rgb(255, 204, 204);
+  background-color: rgb(255, 248, 248);
+}
+
+footer {
+  color: gray;
+}
